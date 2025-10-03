@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendation</title>
+</head>
+<body>
+    <h1>Recommendation Results</h1>
+    <p>Song: {{ song }}</p>
+    <p>Artist: {{ artist }}</p>
+    <h2>Recommended Songs:</h2>
+    <ul>
+        {% for recommendation in recommendations %}
+            <li>{{ recommendation }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
